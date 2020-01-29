@@ -1,1 +1,1 @@
-# 0x00 Shell_basics project
+# 0x00-shell_basics Project :)
