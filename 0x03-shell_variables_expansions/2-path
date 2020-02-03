@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 'export PATH=PATH/action' > /etc/.bashrc
+export PATH=PATH/action'
