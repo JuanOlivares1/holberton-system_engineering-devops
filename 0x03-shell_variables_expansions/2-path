@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '\n \nexport PATH=$PATH/actions > /etc/bash.bashrc
+PATH=$PATH/action
