@@ -1,2 +1,3 @@
 #!/bin/bash
-export; printenv; declare -F
+set
+
