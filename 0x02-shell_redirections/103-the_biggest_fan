@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 | sort | uniq -d | head -n 11
+cut -f 1 | tr -d 'host' | xargs -n1 | sort -u | head -n 11
