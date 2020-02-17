@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1 | tr -d 'host' | sort | uniq -d | head -n 11
+cut -f 1 | sort | uniq -c | sort -n | tail -11 | sort -r | cut -d' ' -f6
