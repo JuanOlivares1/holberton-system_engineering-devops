@@ -4,7 +4,7 @@ n1=0
 
 while [ $n1 -lt 12 ]
 do
-    echo "Hour: $n1"
+    echo "Hour:" $n1
     n2=1
     while [ $n2 -lt 60 ]
     do
