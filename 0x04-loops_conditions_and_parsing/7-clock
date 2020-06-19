@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-n1=0
+# Clock
 
+n1=0
 while [ $n1 -lt 12 ]
 do
     echo "Hour:" $n1
