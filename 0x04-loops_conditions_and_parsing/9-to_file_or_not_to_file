@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# file check
 
 f="holbertonschool"
 if [ -e $f ]
