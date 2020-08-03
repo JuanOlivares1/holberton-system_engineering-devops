@@ -1,3 +1,4 @@
+# create a file in /tmp
 file {'/tmp/holberton':
   ensure  => 'present',
   mode    => '0744',
