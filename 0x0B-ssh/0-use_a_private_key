@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# connects by ssh to a remote server
 ssh ubuntu@35.243.167.75
