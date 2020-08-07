@@ -3,7 +3,7 @@
 
 apt-get update
 apt-get install -y nginx
-echo "Holberton School" > /var/www/html/index.html
+echo "Holberton School" > /etc/nginx/html/index.html
 echo "server {
     listen 80;
     listen [::]:80 default_server;
