@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ...
+# set nginx
 
 sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 pkill -1 nginx
