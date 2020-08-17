@@ -3,7 +3,6 @@
 
 apt-get update
 apt-get install -y nginx
-service nginx start
 mkdir /etc/nginx/html
 echo "Holberton School" > /etc/nginx/html/index.html
 echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
@@ -37,7 +36,7 @@ echo "server {
     location = /404.html{
         root /etc/nginx/html;
         internal;
-}
+    }
     # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000#
     #location ~ \.php$ {
     #   include snippets/fastcgi-php.conf;
@@ -53,10 +52,6 @@ echo "server {
     #location ~ /\.ht {
     #   deny all;
     #}
-}
-# Virtual Host configuration for example.com
-#
-# You can move that to a different file under sites-available/ and symlink that
-# to sites-enabled/ to enable it." > /etc/nginx/sites-available/default
-sed -i "35i add_header X-Served-By \$hostname always;" /etc/nginx/sites-available/default
+}" > /etc/nginx/sites-available/default
+sed -i "19i add_header X-Served-By \$hostname always;" /etc/nginx/sites-available/default
 service nginx restart
