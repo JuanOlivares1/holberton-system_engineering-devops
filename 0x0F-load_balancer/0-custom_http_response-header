@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Installs nginx web server
+# script that sets up your web servers for the deployment of web_static
 
-apt-get update
-apt-get install -y nginx
-mkdir /etc/nginx/html
-echo "Holberton School" > /etc/nginx/html/index.html
-echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+apt-get -y update
+apt-get -y install nginx
+
+echo " Holberton School" > /data/web_static/releases/test/index.html
+
 echo "server {
     listen 80 default_server;
     listen [::]:80 default_server;
@@ -52,6 +52,9 @@ echo "server {
     #location ~ /\.ht {
     #   deny all;
     #}
-}" > /etc/nginx/sites-available/default
-sed -i "19i add_header X-Served-By \$hostname always;" /etc/nginx/sites-available/default
+}
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it." > /etc/nginx/sites-available/default
 service nginx restart
