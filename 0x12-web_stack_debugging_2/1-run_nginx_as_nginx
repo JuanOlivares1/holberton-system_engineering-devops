@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# set nginx user as service runner
+
+sudo service nginx stop
+sudo chown nginx:nginx /etc/nginx/nginx.conf
+sudo -u nginx chmod 644 /etc/nginx/nginx.conf
+sudo -u nginx sed -i "1s/.*/user nginx;/" /etc/nginx/nginx.conf
+sudo service nginx start
