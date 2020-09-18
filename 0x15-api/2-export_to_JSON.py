@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Python script that gets data from API"""
-"""get data and saves it in a json"""
 import json
 import requests
 from sys import argv
