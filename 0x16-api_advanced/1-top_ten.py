@@ -13,8 +13,5 @@ def top_ten(subreddit):
         if 'data' in json:
             for post in json.get("data").get("children"):
                 print(post.get("data").get("title"))
-        else:
-            print(None)
-    else:
-        print(None)
-        return(0)
+    print(None)
+    return(0)
